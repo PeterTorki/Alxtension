@@ -1,0 +1,18 @@
+{
+    "name": "Alx Copier",
+    "version": "1.0.0",
+    "description": "Code Copier",
+    "manifest_version": 3,
+    "author": "Peter Joseph",
+    "action": {
+        "default_title": "Alx Copier"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://intranet.alxswe.com/*"],
+            "js": ["script.js"]
+            
+
+        }
+    ]
+}
