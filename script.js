@@ -13,8 +13,10 @@ const copyToClipboard = str => {
         box.style.display = 'none';
         document.body.removeChild(box)
     }, 1500)
-  if (navigator && navigator.clipboard && navigator.clipboard.writeText)
-    return navigator.clipboard.writeText(str)
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+        return navigator.clipboard.writeText(str)
+    
+    return Promise.reject('The Clipboard API is not available.');
 }
 
 
